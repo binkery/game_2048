@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffaf8ef"
+    android:orientation="vertical" >
+
+    <com.binkery.game.game2048.widget.GamePanelView
+        android:id="@+id/gamepanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginRight="@dimen/view_margin"
+        android:layout_marginTop="@dimen/view_margin" />
+
+    <com.binkery.game.game2048.widget.GameView
+        android:id="@+id/gameview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/view_margin" >
+    </com.binkery.game.game2048.widget.GameView>
+
+</LinearLayout>

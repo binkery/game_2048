@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="view_margin">16dp</dimen>
+    <dimen name="cell_margin">8dp</dimen>
+
+</resources>
