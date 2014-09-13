@@ -2,11 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="10dp" >
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="About" />
+        android:text="2048"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="这是一个 2048 游戏的简单实现，请多多包涵。\n
+        源码地址：\n
+        git@github.com:binkery/game_2048.git\n
+        开发者：binkery\n
+        联系方式：binkery@gmail.com\n
+        个人博客：http://www.binkery.com/" />
 
 </LinearLayout>
