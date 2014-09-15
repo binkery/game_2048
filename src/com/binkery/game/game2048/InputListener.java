@@ -28,15 +28,12 @@ public class InputListener extends SimpleOnGestureListener {
 	@Override
 	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
 			float distanceY) {
-		// Logs.i(TAG, "onScroll " + distanceX + "," + distanceY);
 		return super.onScroll(e1, e2, distanceX, distanceY);
 	}
 
 	@Override
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
 			float velocityY) {
-		// Logs.i(TAG, "onFling velocityX = " + velocityX + "," + velocityY);
-
 		float x = (velocityX > 0 ? velocityX : -velocityX);
 		float y = (velocityY > 0 ? velocityY : -velocityY);
 
@@ -71,7 +68,6 @@ public class InputListener extends SimpleOnGestureListener {
 
 	@Override
 	public boolean onDown(MotionEvent e) {
-		// Logs.i(TAG, "onDown " + e.getX() + "," + e.getY());
 		return super.onDown(e);
 	}
 

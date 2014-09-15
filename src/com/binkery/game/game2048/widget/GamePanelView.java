@@ -27,11 +27,7 @@ public class GamePanelView extends SurfaceView implements
 	private static final String TAG = GamePanelView.class.getSimpleName();
 
 	private SurfaceHolder mSurfaceHolder = null;
-	private GameController mController = null;
 	private static int mUnitWidth = 0;
-	private static int mCellMargin = 0;
-	private float mTextSize = 0;
-	private Paint mPaint = null;
 
 	private int mGapWidth = 0;
 	private int mAppNameWidth = 0;
@@ -57,10 +53,6 @@ public class GamePanelView extends SurfaceView implements
 	private void init(Context context) {
 		mSurfaceHolder = getHolder();
 		mSurfaceHolder.addCallback(this);
-	}
-
-	public void setGameController(GameController controller) {
-		mController = controller;
 	}
 
 	@Override
@@ -93,7 +85,6 @@ public class GamePanelView extends SurfaceView implements
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,
 			int height) {
 		Logs.i(TAG, "surfaceChanged " + width + "," + height);
-		mTextSize = mUnitWidth / 4 * 0.9f;
 		drawGame();
 	}
 
@@ -153,11 +144,9 @@ public class GamePanelView extends SurfaceView implements
 		paint.setColor(0xFFEFE3D5);
 		int fontHeight = b / 3;
 		paint.setTextSize(fontHeight);
-//		int txtWidth = (int)paint.measureText("SCORE");
 		canvas.drawText("SCORE", l + (mAppNameWidth )/2, t + fontHeight, paint);
 		
 		paint.setColor(0xFFFEFBF5);
-//		int scoreWidth = (int)paint.measureText("" + mCurScore);
 		canvas.drawText("" + mCurScore, l + (mAppNameWidth)/2, b - fontHeight/2, paint);
 	}
 
@@ -173,11 +162,9 @@ public class GamePanelView extends SurfaceView implements
 		paint.setColor(0xFFEFE3D5);
 		int fontHeight = b / 3;
 		paint.setTextSize(fontHeight);
-//		int txtWidth = (int)paint.measureText("BEST");
 		canvas.drawText("BEST", l + (mAppNameWidth )/2, t + fontHeight, paint);
 		
 		paint.setColor(0xFFFEFBF5);
-//		int scoreWidth = (int)paint.measureText("" + mBestScore);
 		canvas.drawText("" + mBestScore, l + (mAppNameWidth )/2, b - fontHeight/2, paint);
 	}
 }

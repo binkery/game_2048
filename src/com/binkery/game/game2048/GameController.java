@@ -130,11 +130,13 @@ public class GameController extends Activity {
 	}
 
 	private void gameOver() {
+		
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setTitle("GameOver");
-		builder.setMessage("Your score is " + mCurScore + " , best score is "
-				+ mBestScore);
+		builder.setTitle(R.string.game_over);
+		String format = getResources().getString(R.string.game_over_message);
+		String message = String.format(format, mCurScore, mBestScore);
+		builder.setMessage(message);
 		builder.setNegativeButton("OK", new OnClickListener() {
 
 			@Override
