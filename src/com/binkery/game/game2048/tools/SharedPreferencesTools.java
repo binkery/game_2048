@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-public class Tools {
+public class SharedPreferencesTools {
 	
 	private static final String NAME = "game_2048";
 	private static final String DATA = "data";

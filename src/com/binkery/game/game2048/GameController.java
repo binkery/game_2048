@@ -16,7 +16,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 
-import com.binkery.game.game2048.tools.Tools;
+import com.binkery.game.game2048.tools.SharedPreferencesTools;
 import com.binkery.game.game2048.widget.GamePanelView;
 import com.binkery.game.game2048.widget.GameView;
 
@@ -62,7 +62,7 @@ public class GameController extends Activity {
 		buildRandom();
 		buildRandom();
 		mCurScore = 0;
-		Tools.saveData(this, mMap, mCurScore);
+		SharedPreferencesTools.saveData(this, mMap, mCurScore);
 	}
 
 	protected void reStartNewGame() {
@@ -73,9 +73,9 @@ public class GameController extends Activity {
 	}
 
 	private void getFromStorage() {
-		mCurScore = Tools.getScore(this);
-		mBestScore = Tools.getBest(this);
-		mMap = Tools.getData(this);
+		mCurScore = SharedPreferencesTools.getScore(this);
+		mBestScore = SharedPreferencesTools.getBest(this);
+		mMap = SharedPreferencesTools.getData(this);
 	}
 
 	@Override
@@ -86,7 +86,7 @@ public class GameController extends Activity {
 	@Override
 	protected void onStop() {
 		super.onStop();
-		Tools.saveData(this, mMap, mCurScore);
+		SharedPreferencesTools.saveData(this, mMap, mCurScore);
 	}
 
 	private Handler mHandler = new Handler() {
@@ -104,10 +104,6 @@ public class GameController extends Activity {
 		mGameView.flush();
 		mPanelView.updateScore(mCurScore);
 		mHandler.sendEmptyMessageDelayed(0, 200);
-	}
-
-	private void build() {
-
 	}
 
 	private void buildRandom() {
@@ -144,7 +140,7 @@ public class GameController extends Activity {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				if (mCurScore > mBestScore) {
-					Tools.saveBest(GameController.this, mCurScore);
+					SharedPreferencesTools.saveBest(GameController.this, mCurScore);
 					mBestScore = mCurScore;
 				}
 				dialog.dismiss();
