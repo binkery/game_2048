@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">2048</string>
-    <string name="about">About</string>
-    <string name="menu_undo">Undo</string>
-    <string name="menu_restart">Restart</string>
-    <string name="menu_about">About</string>
-    <string name="game_over">Game Over</string>
-    <string name="game_over_message">Your score is %1$d , best score is %2$d</string>
-    <string name="about_content">这是一个 2048 游戏的简单实现，从功能实现，到界面风格，颜色搭配都比较粗糙，还请多多包涵。这是一个个人开源项目，可以通过下面的地址获取全部代码。\n源码地址：\ngit@github.com:binkery/game_2048.git\n开发者：binkery\n联系方式：binkery@gmail.com\n个人博客：http://www.binkery.com/</string>
+    <string name="app_name">2048(简约版)</string>
+    <string name="about">关于</string>
+    <string name="menu_undo">撤销</string>
+    <string name="menu_restart">重新开始</string>
+    <string name="menu_about">关于</string>
+    <string name="game_over">游戏结束</string>
+    <string name="game_over_message">本次得分： %1$d , 最高分数是： %2$d</string>
+    <string name="about_content">2048(简约版)是一款非常流行的小游戏，简单的游戏规则，让人根本停不下来。该游戏开源免费，个人开发者制作，内容比较简单，下面有该游戏的源码地址，有兴趣的朋友可以自行下载编译运行，欢迎多多交流。\n
+        本游戏最初设计时，不需要任何权限，但是在百度手机助手提交应用时，没有检测到权限，不能提交，所以增加了一个读取 SDCard 的权限。\n
+        源码地址：\n
+        git@github.com:binkery/game_2048.git\n
+        开发者：binkery\n
+        联系方式：binkery@gmail.com\n
+        个人博客：http://www.binkery.com/</string>
 
 </resources>
