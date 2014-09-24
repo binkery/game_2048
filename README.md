@@ -1,4 +1,4 @@
 game_2048
 =========
 
-A simple Android game , it is very simple , really .
+一个简单的2048游戏。
