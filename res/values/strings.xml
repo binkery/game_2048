@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">2048(简约版)</string>
+    <string name="app_name">简约2048</string>
     <string name="about">关于</string>
     <string name="menu_undo">撤销</string>
     <string name="menu_restart">重新开始</string>
