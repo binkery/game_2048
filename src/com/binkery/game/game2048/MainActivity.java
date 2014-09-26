@@ -1,5 +1,7 @@
 package com.binkery.game.game2048;
 
+import com.binkery.common.logs.Logs;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +16,7 @@ public class MainActivity extends GameController {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Logs.setApp("2048");
 		super.onCreate(savedInstanceState);
 	}
 

@@ -1,9 +1,10 @@
 package com.binkery.game.game2048;
 
+import com.binkery.common.logs.Logs;
+
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 
-import com.binkery.game.game2048.tools.Logs;
 
 public class InputListener extends SimpleOnGestureListener {
 

@@ -1,25 +1,16 @@
 package com.binkery.game.game2048.widget;
 
-import java.util.List;
-
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
 
-import com.binkery.game.game2048.Cell;
-import com.binkery.game.game2048.GameController;
-import com.binkery.game.game2048.InputListener;
+import com.binkery.common.logs.Logs;
 import com.binkery.game.game2048.R;
-import com.binkery.game.game2048.tools.Logs;
 
 public class GamePanelView extends SurfaceView implements
 		SurfaceHolder.Callback {
